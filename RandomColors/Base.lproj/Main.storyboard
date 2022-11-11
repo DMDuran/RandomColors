@@ -46,7 +46,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Colors" id="Ys0-4k-yjB"/>
                     <connections>
-                        <segue destination="vR6-5f-zrW" kind="show" identifier="ToColorsDetailsVC" id="Fsj-af-Bg7"/>
+                        <segue destination="vR6-5f-zrW" kind="show" identifier="ToColorsDetailVC" id="s4Y-Ih-sqR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="elQ-5m-bzq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

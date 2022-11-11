@@ -14,13 +14,13 @@ class ColorsTableVC: UIViewController {
 
     
     //Creating a constant to help with naming
-    enum Cells {
-        static let colorCell = "ColorCell"
-    }
-    enum Segue {
-        static let toDetail = "ToColorsDetailVC"
-    }
-    
+//    enum Cells {
+//        static let colorCell = "ColorCell"
+//    }
+//    enum Segue {
+//        static let toDetail = "ToColorsDetailVC"
+//    }
+//
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,7 +55,7 @@ extension ColorsTableVC:UITableViewDelegate, UITableViewDataSource {
     //Tells what will show in the rows
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //Unwrapping the optional using a guard statement
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: Cells.colorCell) else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ColorCell") else {
             return UITableViewCell()
         }
         
@@ -66,7 +66,7 @@ extension ColorsTableVC:UITableViewDelegate, UITableViewDataSource {
     //When we select a row, it will fire the ToColorDetailVC
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let color = colors[indexPath.row]
-        performSegue(withIdentifier: Segue.toDetail, sender: color)
+        performSegue(withIdentifier: "ToColorsDetailVC", sender: color)
     }
     
     
